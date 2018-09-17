@@ -11,8 +11,8 @@ class Header extends React.Component {
   render() {
     return (
       <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1 className="App-title">Welcome to React</h1>
       </header>
     );
   }
@@ -24,9 +24,9 @@ class App extends React.Component {
 
     this.state = {
       content: cowsay.say({
-        text: 'Who am I?'
+        text: 'Who am I?',
       }),
-    }
+    };
     this.handleClick = this.handleClick.bind(this);
     this.updateState = this.updateState.bind(this);
   }
